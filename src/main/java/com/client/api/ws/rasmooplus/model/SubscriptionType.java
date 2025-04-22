@@ -21,11 +21,11 @@ public class SubscriptionType implements Serializable {
 
     public SubscriptionType() {}
 
-    public SubscriptionType(String name, Long accessMonth, BigDecimal price, String procductKey) {
+    public SubscriptionType(String name, Long accessMonth, BigDecimal price, String productKey) {
         this.name = name;
         this.accessMonth = accessMonth;
         this.price = price;
-        this.productKey = procductKey;
+        this.productKey = productKey;
     }
 
     public Long getId() {
