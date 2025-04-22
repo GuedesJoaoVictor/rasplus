@@ -7,7 +7,7 @@ import jakarta.persistence.*;
 public class UserType {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "user_type")
+    @Column(name = "user_type_id")
     private Long id;
     private String name;
     private String description;

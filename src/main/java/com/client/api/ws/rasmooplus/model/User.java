@@ -20,11 +20,11 @@ public class User implements Serializable {
     private LocalDate dtSubscription = LocalDate.now();
     @Column(name = "dt_expiration")
     private LocalDate dtExpiration;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_type_id")
     private UserType userType;
-    @ManyToOne
-    @JoinColumn(name = "subscription_type_id")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "subscriptions_type_id")
     private SubscriptionType subscriptionType;
 
     public User() {}

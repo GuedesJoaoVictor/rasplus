@@ -13,11 +13,11 @@ public class SubscriptionType implements Serializable {
     @Column(name = "subscriptions_type_id")
     private Long id;
     private String name;
-    @Column(name = "access_month")
+    @Column(name = "access_months")
     private Long accessMonth;
     private BigDecimal price;
-    @Column(name = "procduct_key")
-    private String procductKey;
+    @Column(name = "product_key")
+    private String productKey;
 
     public SubscriptionType() {}
 
@@ -25,7 +25,7 @@ public class SubscriptionType implements Serializable {
         this.name = name;
         this.accessMonth = accessMonth;
         this.price = price;
-        this.procductKey = procductKey;
+        this.productKey = procductKey;
     }
 
     public Long getId() {
@@ -60,11 +60,11 @@ public class SubscriptionType implements Serializable {
         this.price = price;
     }
 
-    public String getProcductKey() {
-        return procductKey;
+    public String getProductKey() {
+        return productKey;
     }
 
-    public void setProcductKey(String procductKey) {
-        this.procductKey = procductKey;
+    public void setProductKey(String productKey) {
+        this.productKey = productKey;
     }
 }
