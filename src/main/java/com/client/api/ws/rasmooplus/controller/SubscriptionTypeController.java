@@ -1,5 +1,6 @@
 package com.client.api.ws.rasmooplus.controller;
 
+import com.client.api.ws.rasmooplus.dto.SubscriptionTypeDTO;
 import com.client.api.ws.rasmooplus.model.SubscriptionType;
 import com.client.api.ws.rasmooplus.service.SubscriptionTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,5 +25,10 @@ public class SubscriptionTypeController {
     @GetMapping("/{id}")
     public ResponseEntity<SubscriptionType> findById(@PathVariable("id") Long id) {
         return ResponseEntity.status(HttpStatus.OK).body(subscriptionTypeService.findById(id));
+    }
+
+    @PostMapping
+    public ResponseEntity<SubscriptionType> create(@RequestBody SubscriptionTypeDTO current) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(subscriptionTypeService.create(current));
     }
 }
