@@ -31,4 +31,9 @@ public class SubscriptionTypeController {
     public ResponseEntity<SubscriptionType> create(@RequestBody SubscriptionTypeDTO current) {
         return ResponseEntity.status(HttpStatus.CREATED).body(subscriptionTypeService.create(current));
     }
+
+    @PatchMapping("/{id}")
+    public ResponseEntity<SubscriptionType> update(@PathVariable("id") Long id, @RequestBody SubscriptionTypeDTO current) {
+        return ResponseEntity.status(HttpStatus.OK).body(subscriptionTypeService.update(id, current));
+    }
 }
