@@ -2,9 +2,7 @@ package com.client.api.ws.rasmooplus.controller;
 
 
 import com.client.api.ws.rasmooplus.model.SubscriptionType;
-import com.client.api.ws.rasmooplus.repository.SubscriptionTypeRepository;
 import com.client.api.ws.rasmooplus.service.SubscriptionTypeService;
-import com.client.api.ws.rasmooplus.service.impl.SubscriptionTypeServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
