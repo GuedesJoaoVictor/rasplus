@@ -1,6 +1,5 @@
 package com.client.api.ws.rasmooplus.controller;
 
-
 import com.client.api.ws.rasmooplus.model.SubscriptionType;
 import com.client.api.ws.rasmooplus.service.SubscriptionTypeService;
 import org.springframework.beans.factory.annotation.Autowired;
