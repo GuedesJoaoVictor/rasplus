@@ -50,7 +50,9 @@ public class SubscriptionTypeServiceImpl implements SubscriptionTypeService {
 
     @Override
     public Boolean delete(Long id) {
-        return null;
+        getSubscriptionType(id);
+        subscriptionTypeRepository.deleteById(id);
+        return true;
     }
 
     private SubscriptionType getSubscriptionType(Long id) {
