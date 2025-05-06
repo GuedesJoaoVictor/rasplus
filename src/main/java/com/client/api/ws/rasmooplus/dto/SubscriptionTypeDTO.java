@@ -21,7 +21,6 @@ public class SubscriptionTypeDTO {
     private String name;
     @Max(value = 12, message = "Access Month cant be more than 12")
     private Long accessMonth;
-    @NotBlank(message = "Cant be null or empty")
     private BigDecimal price;
     @Size(min = 5, max = 15)
     private String productKey;
